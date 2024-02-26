@@ -1,13 +1,42 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap')
+
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgblack {
+  background-color: #e3e3db;
+}
+
+.alturasvg{
+  height: 64px;
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
+}
+
+.hover\:font-bold:hover {
+  font-weight: bold;
+}
+
+body,html{
+  background-color: #e3e3db;
+}
+html{
+  background-color: #888885;
 }

@@ -30,7 +30,7 @@ const ExpandableRectangle = () => {
             }}
         >
             <Box style={{ justifyContent: 'center', textAlign: 'center', color: 'white' }}>
-                <Collapse in={showPrincipal} collapsedHeight="0px"> {/* Use Collapse component for smooth transition */}
+                <Collapse in={showPrincipal} timeout={1000} collapsedHeight="0px"> {/* Use Collapse component for smooth transition */}
                     <>
                         <h1 className='py-5' style={{ fontSize: '25px', textAlign: 'center', justifyContent: 'center' }}>
                             Bienvenido a <strong>Posible</strong>, tu aliado estratégico en el mundo del marketing digital. En

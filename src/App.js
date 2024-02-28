@@ -3,6 +3,7 @@ import MainPageESP from "./pages/MainPageESP";
 import ServiciosESP from "./pages/ServiciosESP";
 import NosotrosPage from "./pages/NosotrosPage";
 import MercadoObjPage from "./pages/MercadoObjPage";
+import HerramientasPage from "./pages/HerramientasPage";
 
 const theme = {
     colors: {
@@ -21,6 +22,7 @@ function App() {
               <Route path="/servicios" element={<ServiciosESP/>}/>
               <Route path="/nosotros" element={<NosotrosPage/>}/>
               <Route path="/mercadoobj" element={<MercadoObjPage/>}/>
+              <Route path="/herraop" element={<HerramientasPage/>}/>
           </Routes>
   );
 }

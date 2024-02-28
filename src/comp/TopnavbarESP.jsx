@@ -1,5 +1,15 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link} from "@nextui-org/react";
+import {
+    Navbar,
+    NavbarBrand,
+    NavbarContent,
+    NavbarItem,
+    NavbarMenuToggle,
+    NavbarMenu,
+    NavbarMenuItem,
+    Link,
+    Divider
+} from "@nextui-org/react";
 import LogoP2 from "../foto/logoT.png";
 import '../index.css'
 import Languages from "./Languages";
@@ -10,7 +20,7 @@ export default function TopnavbarESP() {
     const location = useLocation();
     const menuItems = [
         ["NOSOTROS", 'nosotros'],
-        ["MERCADO OBJETIVO", 'mercadoobj'],
+        ["MERCADO\nOBJETIVO", 'mercadoobj'],
         ["SERVICIOS", 'servicios'],
         ["HERRAMIENTAS DE OPERACIÓN", 'herraop']
     ];
@@ -19,7 +29,7 @@ export default function TopnavbarESP() {
         navigate(`/${ruta}`)
     }
 
-    return (
+    return (<>
         <Navbar onMenuOpenChange={setIsMenuOpen} className='bgblack'>
             <NavbarContent>
                 <NavbarMenuToggle
@@ -27,7 +37,9 @@ export default function TopnavbarESP() {
                     className="sm:hidden"
                 />
                 <NavbarBrand>
+                    {!location.pathname.includes('main') &&
                     <img src={LogoP2} alt="logo" className='alturasvg App-logo' onClick={()=>rutear("main")}/>
+                    }
                 </NavbarBrand>
             </NavbarContent>
 
@@ -61,5 +73,7 @@ export default function TopnavbarESP() {
                 ))}
             </NavbarMenu>
         </Navbar>
+        <Divider className="my-4" style={{height: '1px', width: '550px', margin: '0 auto'}} sx={{backgroundColor: 'white' }}/>
+    </>
     );
 }

@@ -4,14 +4,19 @@ import * as React from "react";
 const TabsMV = () => {
     let tabs = [
         {
-            id: "info1",
-            label: "Info1",
+            id: "Empresas Marketing",
+            label: "Empresas Marketing",
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
-            id: "info2",
-            label: "Info2",
+            id: "Empresas Publicidad",
+            label: "Empresas Publicidad",
             content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+        id: "Areas de Recursos Humanos",
+        label: "Areas de Recursos Humanos",
+        content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         }
     ];
     const handleTabChange = (index, event) => {

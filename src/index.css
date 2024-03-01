@@ -1,29 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body{
+body {
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Noto Sans TC", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
+  background-color: #e3e3db;
+}
+html{
+  overscroll-behavior: none
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.bgblack {
-  background-color: #e3e3db;
-}
-
-.alturasvg{
-  height: 64px;
 }
 
 .hover\:underline:hover {
@@ -34,9 +30,51 @@ code {
   font-weight: bold;
 }
 
-body,html{
+.mainv2{
   background-color: #e3e3db;
 }
-html{
-  background-color: #888885;
+
+.main{
+  position: relative;
+}
+
+.bgnav{
+  background-color: transparent;
+}
+
+video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contentv2{
+  position: absolute;
+  width: 100%;
+  top: 60px;
+}
+
+.contentnav{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.overlay{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(227,227,219,.4);
 }

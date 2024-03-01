@@ -3,7 +3,9 @@ import * as React from "react";
 import Cardserv from "../comp/Cardserv";
 import {Container} from "@mui/material";
 import {Divider} from "@nextui-org/react";
-import Footer from "../comp/Footer";
+import BackgroundImage from "../comp/BackgroundImage";
+import backn from "../foto/back.jpg";
+import ExpandableRectangle from "../comp/ExpandableRectangle";
 const ServiciosESP = () => {
     const servicios = [
         "ATENCIÓN INFORMES",
@@ -17,16 +19,43 @@ const ServiciosESP = () => {
     ];
 
 
-    return(
-        <>
+    return (
+        <div className='w-full'>
+            <BackgroundImage image={backn} overlay>
+                <TopnavbarESP/>
+                <div style={{
+                    position: 'relative',
+                    color: 'white',
+                    textAlign: 'center',
+                    padding: '2rem',
+                }}>
+                    <h1 className='py-5 font-bold text-white'
+                        style={{fontSize: '60px', textAlign: 'center'}}>NUESTROS
+                        SERVICIOS</h1>
+                    <Container className='mb-8'>
+                        <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
+                        <div className='grid md:grid-cols-4 pt-5 pb-10' style={{}}>
+                            {servicios.map((item, index) => (
+                                <Cardserv titulo={item}/>
+                            ))}
+                        </div>
+                    </Container>
+                </div>
+            </BackgroundImage>
+        </div>
+    )
+}
+export default ServiciosESP
+/*
+ <>
             <TopnavbarESP/>
-            <div className='h-screen w-full bgblack'>
+            <div className='' style={{backgroundColor:'#e3e3db'}}>
                 <div >
                     <h1 className='pt-3 pb-3 font-bold text-white' style={{fontSize: '60px', textAlign: 'center'}}>NUESTROS SERVICIOS</h1>
                     <Divider className="my-4" style={{ height: '2px', width: '300px', margin: '0 auto' }} />
                 </div>
                 <Container>
-                    <div className='grid md:grid-cols-4 justify-center gap-5 pt-5 pb-10'>
+                    <div className='grid md:grid-cols-4 justify-center pt-5 pb-10'>
                         {servicios.map((item, index) => (
                                 <Cardserv titulo={item}/>
                         ))}
@@ -34,6 +63,4 @@ const ServiciosESP = () => {
                 </Container>
             </div>
             </>
-    )
-}
-export default ServiciosESP
+ */

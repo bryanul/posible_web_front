@@ -11,6 +11,7 @@ export default function Acordioninfo() {
         <Accordion
             selectedKeys={selectedKeys}
             onSelectionChange={setSelectedKeys}
+            style={{textAlign:'center'}}
         >
             <AccordionItem key="1" aria-label="Accordion 1" title="Más información" style={{textAlign:'justify'}}>
                 {defaultContent}

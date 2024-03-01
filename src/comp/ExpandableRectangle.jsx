@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Box, Typography, Paper, Collapse } from "@mui/material";
-import { ExpandMore } from "@mui/icons-material";
+import { Box, Paper, Collapse } from "@mui/material";
 import { Button } from "@nextui-org/react";
 
 const ExpandableRectangle = () => {
@@ -19,10 +18,9 @@ const ExpandableRectangle = () => {
             elevation={3}
             sx={{
                 backgroundColor: '#b16364',
-                border: "1px solid #ccc",
-                borderRadius: "5px",
+                borderRadius: "30px",
                 p: 2,
-                mb: 2,
+                mb: 25,
                 mt: 4,
                 overflow: "hidden",
                 height: expanded ? "auto" : "auto",
@@ -37,7 +35,7 @@ const ExpandableRectangle = () => {
                             Posible, nos apasiona impulsar el éxito de nuestros clientes a través de soluciones innovadoras y
                             estrategias personalizadas que generan resultados tangibles.
                         </h1>
-                        <Button size="lg" onClick={handleExpandClick}>
+                        <Button size="lg" onClick={handleExpandClick} className='hover:scale-105 transition'>
                             Nosotros
                         </Button>
                     </>
@@ -63,7 +61,7 @@ const ExpandableRectangle = () => {
                         scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
                         into electronic typesetting, remaining essentially unchanged.
                     </h1>
-                    <Button size="lg" onClick={handleExpandClick}>
+                    <Button size="lg" onClick={handleExpandClick} className='hover:scale-105 transition'>
                         Cerrar
                     </Button>
                 </Box>

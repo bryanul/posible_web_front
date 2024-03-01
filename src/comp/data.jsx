@@ -1,59 +1,37 @@
-import React from "react";
 const columns = [
-  {name: "HERRAMIENTAS", uid: "name"},
-  {name: "USO", uid: "role"}
+  {name: "HERRAMIENTAS", uid: "name"}
 ];
 
 const users = [
   {
     id: 1,
-    name: "Tony Reichert",
-    role: "CEO",
-    team: "Management",
-    status: "active",
-    age: "29",
+    name: "HERRAMIENTA 1",
+    role: "USO BASICO 1",
     avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-    email: "tony.reichert@example.com",
   },
   {
     id: 2,
-    name: "Zoey Lang",
-    role: "Technical Lead",
-    team: "Development",
-    status: "paused",
-    age: "25",
+    name: "HERRAMIENTA 2",
+    role: "USO BASICO 2",
     avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
-    email: "zoey.lang@example.com",
   },
   {
     id: 3,
-    name: "Jane Fisher",
-    role: "Senior Developer",
-    team: "Development",
-    status: "active",
-    age: "22",
+    name: "HERRAMIENTA 3",
+    role: "USO BASICO 3",
     avatar: "https://i.pravatar.cc/150?u=a04258114e29026702d",
-    email: "jane.fisher@example.com",
   },
   {
     id: 4,
-    name: "William Howard",
-    role: "Community Manager",
-    team: "Marketing",
-    status: "vacation",
-    age: "28",
+    name: "HERRAMIENTA 4",
+    role: "USO BASICO 4",
     avatar: "https://i.pravatar.cc/150?u=a048581f4e29026701d",
-    email: "william.howard@example.com",
   },
   {
     id: 5,
-    name: "Kristen Copper",
-    role: "Sales Manager",
-    team: "Sales",
-    status: "active",
-    age: "24",
+    name: "HERRAMIENTA 5",
+    role: "USO BASICO 5",
     avatar: "https://i.pravatar.cc/150?u=a092581d4ef9026700d",
-    email: "kristen.cooper@example.com",
   },
 ];
 

@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/posible_web_front/static/css/main.b10cfa61.css",
-    "main.js": "/posible_web_front/static/js/main.54817f7c.js",
-    "static/media/logomain.jpg": "/posible_web_front/static/media/logomain.22f227bf2f203a1d6666.jpg",
+    "main.css": "/posible_web_front/static/css/main.e19b8524.css",
+    "main.js": "/posible_web_front/static/js/main.0fe8c727.js",
+    "static/media/back.jpg": "/posible_web_front/static/media/back.cdf6e03021702c2eb13c.jpg",
+    "static/media/back.mp4": "/posible_web_front/static/media/back.3f688d53de002d11b659.mp4",
+    "static/media/hand.png": "/posible_web_front/static/media/hand.6834621955f77e5cc2db.png",
+    "static/media/hand2.png": "/posible_web_front/static/media/hand2.dcaa6408d61bb6b380dc.png",
+    "static/media/empresamrk.png": "/posible_web_front/static/media/empresamrk.630ecd2f593338924457.png",
+    "static/media/fondomain.png": "/posible_web_front/static/media/fondomain.2ea872619334832852de.png",
+    "static/media/logoNAV.png": "/posible_web_front/static/media/logoNAV.844df45cacbec606b1c1.png",
     "static/media/logoT.png": "/posible_web_front/static/media/logoT.0af70c42345665cbf98b.png",
     "index.html": "/posible_web_front/index.html",
-    "main.54817f7c.js.map": "/posible_web_front/static/js/main.54817f7c.js.map"
+    "main.e19b8524.css.map": "/posible_web_front/static/css/main.e19b8524.css.map",
+    "main.0fe8c727.js.map": "/posible_web_front/static/js/main.0fe8c727.js.map"
   },
   "entrypoints": [
-    "static/css/main.b10cfa61.css",
-    "static/js/main.54817f7c.js"
+    "static/css/main.e19b8524.css",
+    "static/js/main.0fe8c727.js"
   ]
 }

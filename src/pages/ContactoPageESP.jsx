@@ -34,8 +34,8 @@ export default function ContactoPageESP(){
                                     color: "black",
                                     width: '50%'
                                 }}>
-                                    INFO-PRUEBA 2
-                                    <p style={{fontSize: '12px'}}>AQUI INFORMACION</p>
+                                    EMAIL
+                                    <p style={{fontSize: '12px'}}>informes@posible.pe</p>
                                 </div>
                             </div>
                             <div className='transition hover:scale-105 md:order-1'
@@ -49,8 +49,8 @@ export default function ContactoPageESP(){
                                     color: "black",
                                     width:  '50%',
                                 }}>
-                                    INFO-PRUEBA 1
-                                    <p style={{fontSize: '12px'}}>AQUI INFORMACION</p>
+                                    TELÉFONO
+                                    <p style={{fontSize: '12px'}}>00000000</p>
                                 </div>
                             </div>
                         </div>

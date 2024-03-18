@@ -5,8 +5,8 @@ const columns = [
 const users = [
   {
     id: 1,
-    name: "HERRAMIENTA 1",
-    role: "USO BASICO 1",
+    name: "Telefonía VOIP",
+    role: "Números telefónicos dedicados exclusivos para todas las operaciones",
     avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
   },
   {

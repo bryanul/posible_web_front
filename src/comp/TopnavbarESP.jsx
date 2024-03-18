@@ -26,7 +26,7 @@ export default function TopnavbarESP() {
         ["NOSOTROS", 'nosotros'],
         ["MERCADO OBJETIVO", 'mercadoobj'],
         ["SERVICIOS", 'servicios'],
-        ["HERRAMIENTAS DE OPERACIÓN", 'herraop'],
+        ["HERRAMIENTAS DE VALOR", 'herraop'],
         ["CONTACTO", 'contacto']
     ];
 

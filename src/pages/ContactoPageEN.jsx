@@ -20,8 +20,8 @@ export default function ContactoPageEN(){
                     textAlign: 'center',
                     margin: '0px'
                 }}>
-                    <h1 className='py-5 font-bold text-white'
-                        style={{fontSize: '60px', textAlign: 'center'}}>CONTACT</h1>
+                    <h1 className='py-5 font-bold text-black'
+                        style={{fontSize: '60px', textAlign: 'center'}}>contact</h1>
                     <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
                     <div className='grid md:grid-cols-2 m-1.5' style={{}}>
                         <div className='transition hover:scale-105 md:order-2'

@@ -25,7 +25,7 @@ const MercadoObjPageESP = () => {
                     textAlign: 'center',
                     padding: '2rem',
                 }}>
-                    <h1 className='py-5 font-bold text-white'
+                    <h1 className='py-5 font-bold text-black'
                         style={{fontSize: '60px', textAlign: 'center'}}>mercado objetivo</h1>
                     <div>
                         <Container>

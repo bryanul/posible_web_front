@@ -10,7 +10,7 @@ import {
     Link,
     Divider, DropdownTrigger, Button, DropdownMenu, DropdownItem, Dropdown
 } from "@nextui-org/react";
-import LogoP2 from "../foto/logoNAV.png";
+import LogoP2 from "../foto/logoT.png";
 import '../index.css'
 import { useNavigate, useLocation} from "react-router-dom";
 import {useEffect, useState} from "react";
@@ -63,7 +63,7 @@ export default function TopnavbarEN() {
                 <NavbarContent className="hidden sm:flex gap-4" justify="center">
                     {menuItems.map(([item,ruta], index) => (
                         <NavbarItem key={`${item}-${index}`} >
-                            <Link style={{ color: location.pathname.includes(ruta) ? '#b16364' : location.pathname.includes('main') ? 'inherit' : '#e3e3db'}} href=""  className='hover:underline font-semibold' onClick={()=>rutear(ruta)}>
+                            <Link style={{ color: location.pathname.includes(ruta) ? '#b16364' : 'black'}} href=""  className='hover:underline font-semibold' onClick={()=>rutear(ruta)}>
                                 {item}
                             </Link>
                         </NavbarItem>

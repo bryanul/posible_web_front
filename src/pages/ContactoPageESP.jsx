@@ -22,7 +22,7 @@ export default function ContactoPageESP(){
                     textAlign: 'center',
                     margin: '0px'
                 }}>
-                    <h1 className='py-5 font-bold text-white'
+                    <h1 className='py-5 font-bold text-black'
                         style={{fontSize: '60px', textAlign: 'center'}}>contacto</h1>
                     <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
                     <div className='grid md:grid-cols-2 m-1.5' style={{}}>

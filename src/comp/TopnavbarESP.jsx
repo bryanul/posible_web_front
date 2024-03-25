@@ -63,7 +63,7 @@ export default function TopnavbarESP() {
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 {menuItems.map(([item,ruta], index) => (
                     <NavbarItem key={`${item}-${index}`} >
-                        <Link style={{ color: location.pathname.includes(ruta) ? '#b16364' : 'inherit'}} href=""  className='hover:underline font-semibold' onClick={()=>rutear(ruta)}>
+                        <Link style={{ color: location.pathname.includes(ruta) ? '#b16364' : 'black'}} href=""  className='hover:underline font-semibold' onClick={()=>rutear(ruta)}>
                             {item}
                         </Link>
                     </NavbarItem>

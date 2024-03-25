@@ -31,8 +31,8 @@ const ServiciosEN = () => {
                     textAlign: 'center',
                     padding: '2rem',
                 }}>
-                    <h1 className='py-5 font-bold text-white'
-                        style={{fontSize: '60px', textAlign: 'center'}}>OUR SERVICES</h1>
+                    <h1 className='py-5 font-bold text-black'
+                        style={{fontSize: '60px', textAlign: 'center'}}>our services</h1>
                     <Container className=''>
                         <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
                         <div className='grid md:grid-cols-4 pt-5 pb-3' style={{}}>

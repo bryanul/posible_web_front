@@ -21,8 +21,8 @@ const NosotrosPageEN = () => {
                          textAlign: 'center',
                          padding: '2rem',
                      }}>
-                    <h1 className='py-5 font-bold text-white'
-                        style={{fontSize: '60px', textAlign: 'center'}}>ABOUT US</h1>
+                    <h1 className='py-5 font-bold text-black'
+                        style={{fontSize: '60px', textAlign: 'center'}}>about us</h1>
                     <Container className='mb-4'>
                         <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
                         <ExpandableRectangle/>

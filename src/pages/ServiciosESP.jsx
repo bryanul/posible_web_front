@@ -31,7 +31,7 @@ const ServiciosESP = () => {
                     textAlign: 'center',
                     padding: '2rem',
                 }}>
-                    <h1 className='py-5 font-bold text-white'
+                    <h1 className='py-5 font-bold text-black'
                         style={{fontSize: '60px', textAlign: 'center'}}>nuestros servicios</h1>
                     <Container className=''>
                         <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>

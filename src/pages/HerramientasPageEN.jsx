@@ -35,8 +35,8 @@ export default function HerramientasPageEN(){
                     textAlign: 'center',
                     padding: '2rem',
                 }}>
-                    <h1 className='py-5 font-bold text-white'
-                        style={{fontSize: '52px', textAlign: 'center'}}>OPERATION TOOLS</h1>
+                    <h1 className='py-5 font-bold text-black'
+                        style={{fontSize: '52px', textAlign: 'center'}}>operation tools</h1>
                     <Container className=''>
                         <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
                         <Paper elevation={3}

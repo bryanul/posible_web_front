@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Paper, Collapse } from "@mui/material";
 import { Button } from "@nextui-org/react";
 
-const ExpandableRectangle = () => {
+const ExpandableRectangle = (props) => {
     const [expanded, setExpanded] = useState(false);
     const [showPrincipal, setShowPrincipal] = useState(true);
 
@@ -20,7 +20,7 @@ const ExpandableRectangle = () => {
                 backgroundColor: '#b16364',
                 borderRadius: "30px",
                 p: 2,
-                mb: 25,
+                mb: 18,
                 mt: 4,
                 overflow: "hidden",
                 height: expanded ? "auto" : "auto",

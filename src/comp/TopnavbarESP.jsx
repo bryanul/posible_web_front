@@ -10,15 +10,16 @@ import {
     Link,
     Divider, DropdownTrigger, Button, DropdownMenu, DropdownItem, Dropdown
 } from "@nextui-org/react";
-import LogoP2 from "../foto/logoNAV.png";
+import LogoP2 from "../foto/logoT.png";
 import '../index.css'
 import { useNavigate, useLocation} from "react-router-dom";
 import {useEffect, useState} from "react";
-
+import spanish from "../foto/spain.svg";
+import english from '../foto/english.svg'
 export default function TopnavbarESP() {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [selectedKeys, setSelectedKeys] = useState('ESP');
+    const [selectedKeys, setSelectedKeys] = useState(new Set(["Español"]));
 
     const navigate = useNavigate()
 
@@ -39,7 +40,7 @@ export default function TopnavbarESP() {
     }
 
     useEffect(() => {
-        if (selectedValue === 'EN'){
+        if (selectedValue === 'English'){
             console.log(location.pathname)
             navigate(`${location.pathname}/EN`)
         }
@@ -54,7 +55,7 @@ export default function TopnavbarESP() {
                 />
                 <NavbarBrand>
                     {!location.pathname.includes('main') &&
-                    <img src={LogoP2} alt="logo" className='alturasvg App-logo' onClick={()=>rutear('main')}/>
+                    <img src={LogoP2} alt="logo" style={{height:'66px'}} className='alturasvg App-logo' onClick={()=>rutear('main')}/>
                     }
                 </NavbarBrand>
             </NavbarContent>
@@ -62,7 +63,7 @@ export default function TopnavbarESP() {
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 {menuItems.map(([item,ruta], index) => (
                     <NavbarItem key={`${item}-${index}`} >
-                        <Link style={{ color: location.pathname.includes(ruta) ? '#b16364' : location.pathname.includes('main') ? 'inherit' : '#e3e3db'}} href=""  className='hover:underline font-semibold' onClick={()=>rutear(ruta)}>
+                        <Link style={{ color: location.pathname.includes(ruta) ? '#b16364' : 'inherit'}} href=""  className='hover:underline font-semibold' onClick={()=>rutear(ruta)}>
                             {item}
                         </Link>
                     </NavbarItem>
@@ -87,8 +88,8 @@ export default function TopnavbarESP() {
                             selectedKeys={selectedKeys}
                             onSelectionChange={setSelectedKeys}
                         >
-                            <DropdownItem key="ESP">Español</DropdownItem>
-                            <DropdownItem key="EN">English</DropdownItem>
+                            <DropdownItem key="Español" startContent={<img style={{height:'12.5px'}} src={spanish}/>}>Español</DropdownItem>
+                            <DropdownItem key="English" startContent={<img style={{height:'10px'}} src={english}/>}>English</DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
                 </NavbarItem>

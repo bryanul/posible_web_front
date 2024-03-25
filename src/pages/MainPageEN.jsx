@@ -3,7 +3,9 @@ import TopnavbarEN from "../comp/TopnavbarEN";
 import {Image} from "@nextui-org/react";
 import logom from '../foto/fondomain.png'
 import videobg from "../foto/back.mp4";
+import useTitle from "../comp/useTitle";
 const MainPageEN = () => {
+    useTitle('-posible. | AGENCIA');
     return(<>
         <div className='main'>
             <div className='overlay'></div>

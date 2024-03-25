@@ -20,15 +20,3 @@ const MainPageESP = () => {
     )
 }
 export default MainPageESP
-/*
-<div className='main'>
-            <div className='overlay'></div>
-            <video src={videobg} autoPlay loop muted className="min-h-screen"/>
-            <div className='contentnav'>
-                <TopnavbarESP/>
-            </div>
-            <div className='content'>
-                <Image src={logom} isZoomed className="w-[75%] text-center" style={{margin: 'auto'}}/>
-            </div>
-        </div>
-*/

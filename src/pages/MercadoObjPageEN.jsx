@@ -1,28 +1,65 @@
 import TopnavbarEN from "../comp/TopnavbarEN";
-import {Container} from "@mui/material";
+import {Container, Paper} from "@mui/material";
 import {Divider} from "@nextui-org/react";
 import TabsMV from "../comp/TabsMV";
 import * as React from "react";
+import BackgroundImage from "../comp/BackgroundImage";
+import backn from "../foto/back.jpg";
+import TopnavbarESP from "../comp/TopnavbarESP";
+import Footerweb from "../comp/Footerweb";
+import useTitle from "../comp/useTitle";
 
 const MercadoObjPageEN = () => {
-    return(
-        <>
-            <TopnavbarEN/>
-            <div style={{backgroundColor: '#e3e3db'}}>
-                <h1 className='pt-3 pb-3 font-bold text-white'
-                    style={{fontSize: '60px', textAlign: 'center'}}>TARGET MARKET</h1>
+    useTitle('Target Market | -posible.')
+    return (
+        <div className='w-full'>
+            <BackgroundImage image={backn} overlay>
+                <TopnavbarEN/>
+                <div style={{
+                    position: 'relative',
+                    color: 'white',
+                    textAlign: 'center',
+                    padding: '2rem',
+                }}>
+                    <h1 className='py-5 font-bold text-white'
+                        style={{fontSize: '60px', textAlign: 'center'}}>TARGET MARKET</h1>
+                    <div>
+                        <Container>
+                            <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
+                            <Paper elevation={3}
+                                   sx={{
+                                       borderRadius: "30px",
+                                       p: 2,
+                                       mb: 14,
+                                       mt: 4,
+                                       overflow: "hidden",
+                                       maxWidth: '100%',
+                                       maxHeight: '100%',
+                                       backgroundColor: '#b16364',
+                                       color: 'white',
+                                       fontSize: '25px'
+                                   }}>
 
-            </div>
-            <div>
-                <Container>
-                    <Divider className="my-4" style={{ height: '2px', width: '300px', margin: '0 auto' }} />
-                    <h1 className='py-5' style={{fontSize: '25px', textAlign: 'center', justifyContent: 'center'}}>
-                        En <strong>Posible</strong>, buscamos lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </h1>
-                    <TabsMV/>
-                </Container>
-            </div>
-        </>
+                                <h1 className='py-5'
+                                    style={{fontSize: '25px', textAlign: 'center', justifyContent: 'center'}}>
+                                    <strong> Posible</strong>, dirige sus operaciones como el socio ideal para compañías
+                                    en el desarrollo de proyectos en las áreas de marketing, publicidad, comercial,
+                                    recursos humanos, soporte y otras áreas con necesidades específicas para el logro de
+                                    resultados óptimos, igualmente <strong> Posible</strong> puede ser el soporte
+                                    directo de las compañías de marketing y publicidad para operaciones de campo y BTL.
+                                </h1>
+                            </Paper>
+                        </Container>
+                    </div>
+                </div>
+                <div className=''
+                     style={{
+                         position: 'relative',
+                     }}>
+                    <Footerweb/>
+                </div>
+            </BackgroundImage>
+        </div>
     )
 }
 export default MercadoObjPageEN

@@ -8,8 +8,11 @@ import backn from "../foto/back.jpg";
 import ExpandableRectangle from "../comp/ExpandableRectangle";
 import CardHerr from "../comp/CardHerr";
 import Cardserv from "../comp/Cardserv";
+import Footerweb from "../comp/Footerweb";
+import useTitle from "../comp/useTitle";
 
 export default function HerramientasPageESP(){
+    useTitle('Herramientas de valor | -posible.');
     const herrs = [
         ["Telefonía VOIP", "Números telefónicos dedicados exclusivos para todas las operaciones\n" +
         "(la implementación de estos números telefónicos en todas los clientes y sus operaciones son sin costo)"],
@@ -21,7 +24,7 @@ export default function HerramientasPageESP(){
         ["Seguridad de la información",""],
         ["Capacitación constante de todo el personal",""],
         ["Integración CTI",""],
-        ["Desarrolladores de herramientas web como landing pages o páginas informativas como soporte a operaciones que lo requieran",""]
+        ["Herramientas web como landing pages o páginas informativas como soporte a operaciones que lo requieran",""]
     ];
     return (
         <div className='w-full'>
@@ -34,25 +37,32 @@ export default function HerramientasPageESP(){
                     padding: '2rem',
                 }}>
                     <h1 className='py-5 font-bold text-white'
-                        style={{fontSize: '52px', textAlign: 'center'}}>HERRAMIENTAS DE VALOR</h1>
-                    <Container className='mb-8' sx={{mb:8}}>
+                        style={{fontSize: '52px', textAlign: 'center'}}>herramientas de valor</h1>
+                    <Container className=''>
                         <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
                         <Paper elevation={3}
                                sx={{
                                    borderRadius: "30px",
                                    p: 2,
-                                   mb: 25,
+                                   mb: 4,
                                    mt: 4,
                                    overflow: "hidden",
-                                   color: '#e3e3db',
+                                   backgroundColor: '#b16364',
                                    maxWidth: '100%',
-                                   maxHeight: '100%'}}
+                                   maxHeight: '100%'
+                               }}
                                className='grid grid-cols-1 '>
                             {herrs.map(([item, descrip], index) => (
                                 <CardHerr titulo={item}/>
                             ))}
                         </Paper>
                     </Container>
+                </div>
+                <div className=''
+                     style={{
+                         position: 'relative',
+                     }}>
+                    <Footerweb/>
                 </div>
             </BackgroundImage>
         </div>

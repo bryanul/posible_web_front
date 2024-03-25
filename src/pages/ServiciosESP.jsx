@@ -6,6 +6,8 @@ import {Divider} from "@nextui-org/react";
 import BackgroundImage from "../comp/BackgroundImage";
 import backn from "../foto/back.jpg";
 import ExpandableRectangle from "../comp/ExpandableRectangle";
+import Footerweb from "../comp/Footerweb";
+import useTitle from "../comp/useTitle";
 const ServiciosESP = () => {
     const servicios = [
         "ATENCIÓN INFORMES",
@@ -18,7 +20,7 @@ const ServiciosESP = () => {
         'OUTSOURCING DE PERSONAL (CAMPO - INHOUSE)'
     ];
 
-
+    useTitle('Servicios | -posible.')
     return (
         <div className='w-full'>
             <BackgroundImage image={backn} overlay>
@@ -30,16 +32,21 @@ const ServiciosESP = () => {
                     padding: '2rem',
                 }}>
                     <h1 className='py-5 font-bold text-white'
-                        style={{fontSize: '60px', textAlign: 'center'}}>NUESTROS
-                        SERVICIOS</h1>
-                    <Container className='mb-8'>
+                        style={{fontSize: '60px', textAlign: 'center'}}>nuestros servicios</h1>
+                    <Container className=''>
                         <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
-                        <div className='grid md:grid-cols-4 pt-5 pb-10' style={{}}>
+                        <div className='grid md:grid-cols-4 pt-5 pb-3' style={{}}>
                             {servicios.map((item, index) => (
                                 <Cardserv titulo={item}/>
                             ))}
                         </div>
                     </Container>
+                </div>
+                <div className=''
+                     style={{
+                         position: 'relative',
+                     }}>
+                    <Footerweb/>
                 </div>
             </BackgroundImage>
         </div>

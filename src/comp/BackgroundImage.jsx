@@ -7,18 +7,19 @@ const BackgroundImage = ({ image, children, overlay }) => (
             position: 'relative',
             width: '100%',
             height: '100%',
+            backgroundColor:'#e3e3db'
         }}
     >
-        <img
-            src={image}
-            alt=""
-            style={{
-                position: 'absolute',
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-            }}
-        />
+        {/*<img*/}
+        {/*    src={image}*/}
+        {/*    alt=""*/}
+        {/*    style={{*/}
+        {/*        position: 'absolute',*/}
+        {/*        width: '100%',*/}
+        {/*        height: '100%',*/}
+        {/*        objectFit: 'cover',*/}
+        {/*    }}*/}
+        {/*/>*/}
         {overlay && (
             <div
                 style={{
@@ -27,7 +28,7 @@ const BackgroundImage = ({ image, children, overlay }) => (
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    backgroundColor: 'rgba(0, 0, 0, 0.25)',
+                    backgroundColor: 'rgba(0, 0, 0, 0)',
                 }}
             />
         )}

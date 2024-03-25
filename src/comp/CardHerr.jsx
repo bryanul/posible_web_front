@@ -7,7 +7,7 @@ export default function CardHerr(props){
     return(
         <Card className="py-4 m-3 transition hover:scale-105" style={{backgroundColor:'transparent'}}>
             <CardHeader className="flex justify-center items-center">
-                <h3 className="font-bold text-large">{props.titulo}</h3>
+                <h3 className="font-bold text-large" style={{color:'white'}}>{props.titulo}</h3>
             </CardHeader>
         </Card>
     )

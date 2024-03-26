@@ -19,7 +19,7 @@ function App() {
         <>
             <Routes>
                 <Route
-                    path="*"
+                    path=""
                     element={<Navigate to="/main" replace/>}
                 />
                 <Route path="/main" element={<MainPageESP />} />

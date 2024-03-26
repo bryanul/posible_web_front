@@ -31,9 +31,9 @@ const MercadoObjPageESP = () => {
                         <Container>
                             <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
                             <Paper elevation={3}
+                                   className='p-3 md:p-4'
                                    sx={{
                                        borderRadius: "30px",
-                                       p: 2,
                                        mb: 14,
                                        mt: 4,
                                        overflow: "hidden",
@@ -44,8 +44,8 @@ const MercadoObjPageESP = () => {
                                        fontSize: '25px'
                                    }}>
 
-                                <h1 className='py-5'
-                                    style={{fontSize: '25px', textAlign: 'center', justifyContent: 'center'}}>
+                                <h1 className='py-5 text-xl md:text-[25px]/[35px]'
+                                    style={{textAlign: 'center', justifyContent: 'center'}}>
                                     <strong> Posible</strong>, dirige sus operaciones como el socio ideal para compañías
                                     en el desarrollo de proyectos en las áreas de marketing, publicidad, comercial,
                                     recursos humanos, soporte y otras áreas con necesidades específicas para el logro de

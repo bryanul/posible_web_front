@@ -26,7 +26,7 @@ export default function ContactoPageESP(){
                         style={{fontSize: '60px', textAlign: 'center'}}>contacto</h1>
                     <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
                     <div className='grid md:grid-cols-2 m-1.5' style={{}}>
-                        <div className='transition hover:scale-105 md:order-2'
+                        <div className='transition hover:scale-110 md:order-2'
                              style={{position: "relative", width: "100%"}}>
                             <img src={Hand2} alt='hand2' style={{width: '100%'}}/>
                             <div style={{
@@ -41,7 +41,7 @@ export default function ContactoPageESP(){
                                 <p style={{fontSize: '12px'}}>informes@posible.pe</p>
                             </div>
                         </div>
-                        <div className='transition hover:scale-105 md:order-1'
+                        <div className='transition hover:scale-110 md:order-1'
                              style={{position: "relative", width: "100%"}}>
                             <img src={Hand1} alt='hand1' style={{}}/>
                             <div style={{

@@ -15,7 +15,7 @@ const ExpandableRectangle = (props) => {
 
     return (
         <Paper
-            className='p-1 md:p-4'
+            className='p-3 md:p-4'
             elevation={3}
             sx={{
                 backgroundColor: '#b16364',
@@ -31,7 +31,7 @@ const ExpandableRectangle = (props) => {
             <Box style={{ justifyContent: 'center', textAlign: 'center', color: 'white' }}>
                 <Collapse in={showPrincipal} timeout={1000} collapsedHeight="0px"> {/* Use Collapse component for smooth transition */}
                     <>
-                        <h1 className='py-5 text-lg md:text-2xl' style={{ textAlign: 'center', justifyContent: 'center' }}>
+                        <h1 className='py-5 text-xl md:text-[25px]/[35px]' style={{ textAlign: 'center', justifyContent: 'center' }}>
                             Bienvenido a <strong>Posible</strong>, tu aliado estratégico en el mundo del marketing digital. En
                             Posible, nos apasiona impulsar el éxito de nuestros clientes a través de soluciones innovadoras y
                             estrategias personalizadas que generan resultados tangibles.

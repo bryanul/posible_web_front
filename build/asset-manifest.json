@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/posible_web_front/build/static/css/main.7d75357d.css",
-    "main.js": "/posible_web_front/build/static/js/main.39f08b05.js",
-    "static/media/back.jpg": "/posible_web_front/build/static/media/back.cdf6e03021702c2eb13c.jpg",
-    "static/media/back.mp4": "/posible_web_front/build/static/media/back.3f688d53de002d11b659.mp4",
-    "static/media/hand.png": "/posible_web_front/build/static/media/hand.6834621955f77e5cc2db.png",
-    "static/media/hand2.png": "/posible_web_front/build/static/media/hand2.dcaa6408d61bb6b380dc.png",
-    "static/media/empresamrk.png": "/posible_web_front/build/static/media/empresamrk.630ecd2f593338924457.png",
-    "static/media/fondomain.png": "/posible_web_front/build/static/media/fondomain.2ea872619334832852de.png",
-    "static/media/logoT.png": "/posible_web_front/build/static/media/logoT.0af70c42345665cbf98b.png",
-    "static/media/english.svg": "/posible_web_front/build/static/media/english.33c8035805d0139924dd472c4d5b3adf.svg",
-    "index.html": "/posible_web_front/build/index.html",
-    "static/media/spain.svg": "/posible_web_front/build/static/media/spain.895b05866e99467543b323d61660f748.svg",
-    "main.7d75357d.css.map": "/posible_web_front/build/static/css/main.7d75357d.css.map",
-    "main.39f08b05.js.map": "/posible_web_front/build/static/js/main.39f08b05.js.map"
+    "main.css": "/posible_web_front/static/css/main.7d75357d.css",
+    "main.js": "/posible_web_front/static/js/main.b8afe177.js",
+    "static/media/back.jpg": "/posible_web_front/static/media/back.cdf6e03021702c2eb13c.jpg",
+    "static/media/back.mp4": "/posible_web_front/static/media/back.3f688d53de002d11b659.mp4",
+    "static/media/hand.png": "/posible_web_front/static/media/hand.6834621955f77e5cc2db.png",
+    "static/media/hand2.png": "/posible_web_front/static/media/hand2.dcaa6408d61bb6b380dc.png",
+    "static/media/empresamrk.png": "/posible_web_front/static/media/empresamrk.630ecd2f593338924457.png",
+    "static/media/fondomain.png": "/posible_web_front/static/media/fondomain.2ea872619334832852de.png",
+    "static/media/logoT.png": "/posible_web_front/static/media/logoT.0af70c42345665cbf98b.png",
+    "static/media/english.svg": "/posible_web_front/static/media/english.33c8035805d0139924dd472c4d5b3adf.svg",
+    "index.html": "/posible_web_front/index.html",
+    "static/media/spain.svg": "/posible_web_front/static/media/spain.895b05866e99467543b323d61660f748.svg",
+    "main.7d75357d.css.map": "/posible_web_front/static/css/main.7d75357d.css.map",
+    "main.b8afe177.js.map": "/posible_web_front/static/js/main.b8afe177.js.map"
   },
   "entrypoints": [
     "static/css/main.7d75357d.css",
-    "static/js/main.39f08b05.js"
+    "static/js/main.b8afe177.js"
   ]
 }

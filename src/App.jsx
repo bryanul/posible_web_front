@@ -19,21 +19,21 @@ function App() {
         <>
             <Routes>
                 <Route
-                    path=""
+                    exact path=""
                     element={<Navigate to="/main" replace/>}
                 />
-                <Route path="/main" element={<MainPageESP />} />
-                <Route path="/main/EN" element={<MainPageEN />} />
-                <Route path="/servicios" element={<ServiciosESP />} />
-                <Route path="/nosotros" element={<NosotrosPageESP />} />
-                <Route path="/mercadoobj" element={<MercadoObjPageESP />} />
-                <Route path="/herraop" element={<HerramientasPageESP />} />
-                <Route path="/contacto" element={<ContactoPageESP />} />
-                <Route path="/servicios/EN" element={<ServiciosEN />} />
-                <Route path="/nosotros/EN" element={<NosotrosPageEN />} />
-                <Route path="/mercadoobj/EN" element={<MercadoObjPageEN />} />
-                <Route path="/herraop/EN" element={<HerramientasPageEN />} />
-                <Route path="/contacto/EN" element={<ContactoPageEN />} />
+                <Route exact path="/main" element={<MainPageESP />} />
+                <Route exact path="/main/EN" element={<MainPageEN />} />
+                <Route exact path="/servicios" element={<ServiciosESP />} />
+                <Route exact path="/nosotros" element={<NosotrosPageESP />} />
+                <Route exact path="/mercadoobj" element={<MercadoObjPageESP />} />
+                <Route exact path="/herraop" element={<HerramientasPageESP />} />
+                <Route exact path="/contacto" element={<ContactoPageESP />} />
+                <Route exact path="/servicios/EN" element={<ServiciosEN />} />
+                <Route exact path="/nosotros/EN" element={<NosotrosPageEN />} />
+                <Route exact path="/mercadoobj/EN" element={<MercadoObjPageEN />} />
+                <Route exact path="/herraop/EN" element={<HerramientasPageEN />} />
+                <Route exact path="/contacto/EN" element={<ContactoPageEN />} />
             </Routes>
         </>
     );

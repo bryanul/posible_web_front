@@ -9,6 +9,7 @@ import backn from "../foto/back.jpg";
 import ExpandableRectangle from "../comp/ExpandableRectangle";
 import Footerweb from "../comp/Footerweb";
 import useTitle from "../comp/useTitle";
+import {motion} from 'framer-motion'
 
 export default function ContactoPageESP(){
     useTitle('Contacto | -posible.');
@@ -20,43 +21,44 @@ export default function ContactoPageESP(){
                     position: 'relative',
                     color: 'white',
                     textAlign: 'center',
-                    margin: '0px'
                 }}>
-                    <h1 className='py-5 font-bold text-black'
-                        style={{fontSize: '60px', textAlign: 'center'}}>contacto</h1>
-                    <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
-                    <div className='grid md:grid-cols-2 m-1.5' style={{}}>
-                        <div className='transition hover:scale-110 md:order-2'
-                             style={{position: "relative", width: "100%"}}>
-                            <img src={Hand2} alt='hand2' style={{width: '100%'}}/>
-                            <div style={{
-                                position: "absolute",
-                                top: "31.5%",
-                                right: '26%',
-                                textAlign: "center",
-                                color: "black",
-                                width: '50%'
-                            }}>
-                                EMAIL
-                                <p style={{fontSize: '12px'}}>informes@posible.pe</p>
-                            </div>
+                    <motion.div animate={{y: 0}} transition={{duration: 1.5}} initial={{y: -100}}>
+                        <h1 className='pb-5 pt-10 font-bold text-black'
+                            style={{fontSize: '60px', textAlign: 'center'}}>contacto</h1>
+                    </motion.div>
+                        <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
+                        <div className='grid md:grid-cols-2 m-1.5' style={{}}>
+                            <motion.div className='transition hover:scale-110 md:order-2' animate={{x: 0}} transition={{duration: 1.5}} initial={{x: 100}}
+                                 style={{position: "relative", width: "100%"}}>
+                                <img src={Hand2} alt='hand2' style={{width: '100%'}}/>
+                                <div style={{
+                                    position: "absolute",
+                                    top: "31.5%",
+                                    right: '26%',
+                                    textAlign: "center",
+                                    color: "black",
+                                    width: '50%'
+                                }}>
+                                    EMAIL
+                                    <p style={{fontSize: '12px'}}>informes@posible.pe</p>
+                                </div>
+                            </motion.div>
+                            <motion.div className='transition hover:scale-110 md:order-1' animate={{x: 0}} transition={{duration: 1.5}} initial={{x: -100}}
+                                 style={{position: "relative", width: "100%"}}>
+                                <img src={Hand1} alt='hand1' style={{}}/>
+                                <div style={{
+                                    position: "absolute",
+                                    top: "14%",
+                                    right: '5.5%',
+                                    textAlign: "center",
+                                    color: "black",
+                                    width: '50%',
+                                }}>
+                                    TELÉFONO
+                                    <p style={{fontSize: '12px'}}>00000000</p>
+                                </div>
+                            </motion.div>
                         </div>
-                        <div className='transition hover:scale-110 md:order-1'
-                             style={{position: "relative", width: "100%"}}>
-                            <img src={Hand1} alt='hand1' style={{}}/>
-                            <div style={{
-                                position: "absolute",
-                                top: "14%",
-                                right: '5.5%',
-                                textAlign: "center",
-                                color: "black",
-                                width: '50%',
-                            }}>
-                                TELÉFONO
-                                <p style={{fontSize: '12px'}}>00000000</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div className=''
                      style={{

@@ -7,6 +7,7 @@ import backn from "../foto/back.jpg"
 import BackgroundImage from "../comp/BackgroundImage";
 import Footerweb from "../comp/Footerweb";
 import useTitle from "../comp/useTitle";
+import {motion} from 'framer-motion'
 
 const NosotrosPageEN = () => {
     useTitle('About us | -posible.')
@@ -21,8 +22,10 @@ const NosotrosPageEN = () => {
                          textAlign: 'center',
                          padding: '2rem',
                      }}>
-                    <h1 className='py-5 font-bold text-black'
-                        style={{fontSize: '60px', textAlign: 'center'}}>about us</h1>
+                    <motion.div animate={{y: 0}} transition={{duration: 1.5}} initial={{y: -100}}>
+                        <h1 className='py-5 font-bold text-black'
+                            style={{fontSize: '60px', textAlign: 'center'}}>about us</h1>
+                    </motion.div>
                     <Container className='mb-4'>
                         <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
                         <ExpandableRectangle/>

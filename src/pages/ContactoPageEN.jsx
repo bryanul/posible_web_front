@@ -7,6 +7,7 @@ import BackgroundImage from "../comp/BackgroundImage";
 import backn from "../foto/back.jpg";
 import Footerweb from "../comp/Footerweb";
 import useTitle from "../comp/useTitle";
+import {motion} from 'framer-motion'
 
 export default function ContactoPageEN(){
     useTitle('Contact | -posible.');
@@ -18,14 +19,16 @@ export default function ContactoPageEN(){
                     position: 'relative',
                     color: 'white',
                     textAlign: 'center',
-                    margin: '0px'
                 }}>
-                    <h1 className='py-5 font-bold text-black'
-                        style={{fontSize: '60px', textAlign: 'center'}}>contact</h1>
+                    <motion.div animate={{y: 0}} transition={{duration: 1.5}} initial={{y: -100}}>
+                        <h1 className='pb-5 pt-10 font-bold text-black'
+                            style={{fontSize: '60px', textAlign: 'center'}}>contact</h1>
+                    </motion.div>
                     <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
                     <div className='grid md:grid-cols-2 m-1.5' style={{}}>
-                        <div className='transition hover:scale-110 md:order-2'
-                             style={{position: "relative", width: "100%"}}>
+                        <motion.div className='transition hover:scale-110 md:order-2' animate={{x: 0}}
+                                    transition={{duration: 1.5}} initial={{x: 100}}
+                                    style={{position: "relative", width: "100%"}}>
                             <img src={Hand2} alt='hand2' style={{width: '100%'}}/>
                             <div style={{
                                 position: "absolute",
@@ -38,9 +41,10 @@ export default function ContactoPageEN(){
                                 EMAIL
                                 <p style={{fontSize: '12px'}}>informes@posible.pe</p>
                             </div>
-                        </div>
-                        <div className='transition hover:scale-110 md:order-1'
-                             style={{position: "relative", width: "100%"}}>
+                        </motion.div>
+                        <motion.div className='transition hover:scale-110 md:order-1' animate={{x: 0}}
+                                    transition={{duration: 1.5}} initial={{x: -100}}
+                                    style={{position: "relative", width: "100%"}}>
                             <img src={Hand1} alt='hand1' style={{}}/>
                             <div style={{
                                 position: "absolute",
@@ -53,16 +57,16 @@ export default function ContactoPageEN(){
                                 PHONE
                                 <p style={{fontSize: '12px'}}>00000000</p>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
                 </div>
-                <div className=''
-                     style={{
-                         position: 'relative',
-                     }}>
-                    <Footerweb/>
-                </div>
-            </BackgroundImage>
         </div>
-    )
+    <div className=''
+         style={{
+             position: 'relative',
+         }}>
+        <Footerweb/>
+    </div>
+</BackgroundImage>
+</div>
+)
 }

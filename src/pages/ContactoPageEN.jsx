@@ -29,33 +29,37 @@ export default function ContactoPageEN(){
                         <motion.div className='transition hover:scale-110 md:order-2' animate={{x: 0}}
                                     transition={{duration: 1.5}} initial={{x: 100}}
                                     style={{position: "relative", width: "100%"}}>
-                            <img src={Hand2} alt='hand2' style={{width: '100%'}}/>
-                            <div style={{
-                                position: "absolute",
-                                top: "31.5%",
-                                right: '26%',
-                                textAlign: "center",
-                                color: "black",
-                                width: '50%'
-                            }}>
-                                EMAIL
-                                <p style={{fontSize: '12px'}}>informes@posible.pe</p>
+                            <div className='transition hover:scale-110'>
+                                <img src={Hand2} alt='hand2' style={{width: '100%'}}/>
+                                <div style={{
+                                    position: "absolute",
+                                    top: "31.5%",
+                                    right: '26%',
+                                    textAlign: "center",
+                                    color: "black",
+                                    width: '50%'
+                                }}>
+                                    EMAIL
+                                    <p style={{fontSize: '12px'}}>informes@posible.pe</p>
+                                </div>
                             </div>
                         </motion.div>
                         <motion.div className='transition hover:scale-110 md:order-1' animate={{x: 0}}
                                     transition={{duration: 1.5}} initial={{x: -100}}
                                     style={{position: "relative", width: "100%"}}>
-                            <img src={Hand1} alt='hand1' style={{}}/>
-                            <div style={{
-                                position: "absolute",
-                                top: "14%",
-                                right: '5.5%',
-                                textAlign: "center",
-                                color: "black",
-                                width: '50%',
-                            }}>
-                                PHONE
-                                <p style={{fontSize: '12px'}}>00000000</p>
+                            <div className='transition hover:scale-110'>
+                                <img src={Hand1} alt='hand1' style={{}}/>
+                                <div style={{
+                                    position: "absolute",
+                                    top: "14%",
+                                    right: '5.5%',
+                                    textAlign: "center",
+                                    color: "black",
+                                    width: '50%',
+                                }}>
+                                    PHONE
+                                    <p style={{fontSize: '12px'}}>00000000</p>
+                                </div>
                             </div>
                         </motion.div>
                 </div>

@@ -36,7 +36,7 @@ const ExpandableRectangleEN = (props) => {
                                 Welcome to <strong>POSIBLE</strong>, your strategic ally in the development of all your projects. At <strong>POSIBLE</strong>, we are passionate about driving our customers’ success through innovative solutions and customized strategies that generate tangible results
                             </h1>
                             <Button size="lg" onClick={handleExpandClick} className='hover:scale-105 transition mb-1'>
-                                Nosotros
+                                About Us
                             </Button>
                         </>
                     </Collapse>
@@ -57,7 +57,7 @@ const ExpandableRectangleEN = (props) => {
                             We will add value to customers, maintain outstanding results, success through the talent of people, manage with agility taking advantage of creativity and innovation always achieving a sustainable future.
                         </h1>
                         <Button size="lg" onClick={handleExpandClick} className='hover:scale-105 transition mb-1'>
-                            Cerrar
+                            Close
                         </Button>
                     </Box>
                 </Collapse>

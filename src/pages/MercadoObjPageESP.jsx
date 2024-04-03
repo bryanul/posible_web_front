@@ -43,7 +43,7 @@ const MercadoObjPageESP = () => {
 
                                         <h1 className='py-5 text-xl md:text-[25px]/[35px]'
                                             style={{textAlign: 'center', justifyContent: 'center'}}>
-                                            <strong> Posible</strong>, dirige sus operaciones como el socio ideal para
+                                            <strong> Posible</strong> dirige sus operaciones como el socio ideal para
                                             compañías
                                             en el desarrollo de proyectos en las áreas de marketing, publicidad,
                                             comercial,
@@ -51,9 +51,7 @@ const MercadoObjPageESP = () => {
                                             logro de
                                             resultados óptimos, igualmente <strong> Posible</strong> puede ser el
                                             soporte
-                                            directo de las compañías de marketing y publicidad para operaciones de campo
-                                            y
-                                            BTL.
+                                            directo de las compañías de marketing y publicidad en todo tipo de proyecto
                                         </h1>
                                     </Paper>
                                 </motion.div>

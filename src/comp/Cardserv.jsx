@@ -10,7 +10,7 @@ export default function Cardserv(props) {
                 </CardHeader>
                 <CardBody className="overflow-visible py-2 display-flex flex-column align-items-center">
                 <p className="text-tiny uppercase "></p>
-                    <Acordioninfo/>
+                    <Acordioninfo accordion={props.info}/>
                 </CardBody>
             </Card>
     );

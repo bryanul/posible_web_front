@@ -46,17 +46,7 @@ const MercadoObjPageEN = () => {
 
                                         <h1 className='py-5'
                                             style={{fontSize: '25px', textAlign: 'center', justifyContent: 'center'}}>
-                                            <strong> Posible</strong>, dirige sus operaciones como el socio ideal para
-                                            compañías
-                                            en el desarrollo de proyectos en las áreas de marketing, publicidad,
-                                            comercial,
-                                            recursos humanos, soporte y otras áreas con necesidades específicas para el
-                                            logro de
-                                            resultados óptimos, igualmente <strong> Posible</strong> puede ser el
-                                            soporte
-                                            directo de las compañías de marketing y publicidad para operaciones de campo
-                                            y
-                                            BTL.
+                                            <strong> Posible</strong> directs its operations as the ideal partner for companies in the development of projects in the areas of marketing, advertising, commercial, human resources, support and other areas with specific needs for the achievement of optimal results, also can be the direct support of the marketing and advertising companies in all types of project
                                         </h1>
                                     </Paper>
                                 </motion.div>

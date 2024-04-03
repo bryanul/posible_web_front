@@ -3,7 +3,7 @@ import { Box, Paper, Collapse } from "@mui/material";
 import { Button } from "@nextui-org/react";
 import {motion} from 'framer-motion'
 
-const ExpandableRectangle = (props) => {
+const ExpandableRectangleEN = (props) => {
     const [expanded, setExpanded] = useState(false);
     const [showPrincipal, setShowPrincipal] = useState(true);
 
@@ -33,7 +33,7 @@ const ExpandableRectangle = (props) => {
                     <Collapse in={showPrincipal} timeout={1000} collapsedHeight="0px"> {/* Use Collapse component for smooth transition */}
                         <>
                             <h1 className='py-5 text-xl md:text-[25px]/[35px]' style={{ textAlign: 'center', justifyContent: 'center' }}>
-                                Bienvenido a <strong>POSIBLE</strong>, tu aliado estratégico en el desarrollo de todos tus proyectos. En <strong>POSIBLE</strong>, nos apasiona impulsar el éxito de nuestros clientes a través de soluciones innovadoras y estrategias personalizadas que generan resultados tangibles
+                                Welcome to <strong>POSIBLE</strong>, your strategic ally in the development of all your projects. At <strong>POSIBLE</strong>, we are passionate about driving our customers’ success through innovative solutions and customized strategies that generate tangible results
                             </h1>
                             <Button size="lg" onClick={handleExpandClick} className='hover:scale-105 transition mb-1'>
                                 Nosotros
@@ -44,18 +44,17 @@ const ExpandableRectangle = (props) => {
                 <Collapse in={expanded} timeout={1000} unmountOnExit>
                     <Box style={{ justifyContent: 'center', textAlign: 'center', color: 'white' }}>
                         <h1 className='py-2 text-2xl md:text-4xl' style={{ textAlign: 'center', justifyContent: 'center' }}>
-                            <strong>MISIÓN:</strong>
+                            <strong>MISION:</strong>
                         </h1>
                         <h1 className='py-2 text-lg md:text-2xl' style={{ textAlign: 'center', justifyContent: 'center' }}>
-                            En <strong>POSIBLE</strong> trabajamos para ofrecer el desarrollo de soluciones avanzadas y de alta calidad, principalmente soluciones de gestión multisectorial. Transformamos nuestras ideas, valores, innovaciones, proyectos y servicios en valor para las necesidades reales de nuestros clientes potenciales. Potenciamos el desarrollo profesional y humano de las personas con las que trabajamos, y aportamos a la sociedad una parte de nuestros beneficios.
+                            At <strong>POSIBLE</strong> we work to offer the development of advanced and high-quality solutions, mainly multisectoral management solutions, transform our ideas, values, innovations, projects and services into value for the real needs of our potential customers. We enhance the professional and human development of the people we work with, and we contribute to society a part of our benefits.
                         </h1>
                         <h1 className='py-2 text-2xl md:text-4xl' style={{ textAlign: 'center', justifyContent: 'center' }}>
-                            <strong>VISIÓN:</strong>
+                            <strong>VISION:</strong>
                         </h1>
                         <h1 className='py-2 text-lg md:text-2xl'  style={{ textAlign: 'center', justifyContent: 'center' }}>
-                            Queremos, ofrecer un servicio y una atención de alta calidad por parte de todo el equipo de <strong>POSIBLE</strong>, aportar productos sólidos de calidad que permitan a nuestros clientes y sus clientes evolucionar en sus negocios y les aporten un verdadero valor, nos adaptaremos a sus necesidades reales actuales y futuras mediante soluciones completas y segmentadas integradas en tiempo real.
-                            Añadiremos valor para los clientes, mantener resultados sobresalientes, alcanzar éxito mediante el talento de personas, gestionar con agilidad, aprovechando la creatividad y la innovación, logrando siempre un futuro sostenible.
-
+                            We want to offer a high quality service and care by the entire team of <strong>POSIBLE</strong>, provide solid quality products that enable our customers and their customers to evolve in their business and give them real value, we will adapt to their actual and future needs through complete and segmented solutions integrated in real time.
+                            We will add value to customers, maintain outstanding results, success through the talent of people, manage with agility taking advantage of creativity and innovation always achieving a sustainable future.
                         </h1>
                         <Button size="lg" onClick={handleExpandClick} className='hover:scale-105 transition mb-1'>
                             Cerrar
@@ -67,4 +66,4 @@ const ExpandableRectangle = (props) => {
     );
 };
 
-export default ExpandableRectangle;
+export default ExpandableRectangleEN;

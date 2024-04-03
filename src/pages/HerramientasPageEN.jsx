@@ -14,17 +14,7 @@ import {motion} from 'framer-motion'
 export default function HerramientasPageEN(){
     useTitle('Operation tools | -posible.');
     const herrs = [
-        ["Telefonía VOIP", "Números telefónicos dedicados exclusivos para todas las operaciones\n" +
-        "(la implementación de estos números telefónicos en todas los clientes y sus operaciones son sin costo)"],
-        ["Grabación de llamadas",""],
-        ["Campañas de SMS y correos masivos",""],
-        ["Integración con canales de comunicación como WhatsApp y redes sociales en las operaciones que lo requieran",""],
-        ["Herramientas tecnólogas propias para operaciones InHouse",""],
-        ["Respuesta de voz interactiva (IVR)",""],
-        ["Seguridad de la información",""],
-        ["Capacitación constante de todo el personal",""],
-        ["Integración CTI",""],
-        ["Herramientas web como landing pages o páginas informativas como soporte a operaciones que lo requieran",""]
+        "VoIP telephony", "Call recording", "SMS and mass mail campaigns", "Integration with communication channels such as WhatsApp and social networks in operations that require it", "Technological tools for InHouse operations", "Interactive voice response (IVR)", "Information security", "Constant training of all staff", "ICT integration", "Web tools such as landing pages or information pages as support for operations which require it"
     ];
     return(
         <div className='w-full'>
@@ -55,7 +45,7 @@ export default function HerramientasPageEN(){
                                        maxHeight: '100%'
                                    }}
                                    className='grid grid-cols-1 '>
-                                {herrs.map(([item, descrip], index) => (
+                                {herrs.map((item, index) => (
                                     <CardHerr titulo={item}/>
                                 ))}
                             </Paper>

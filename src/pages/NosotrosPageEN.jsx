@@ -1,7 +1,7 @@
 import {Divider} from "@nextui-org/react";
 import {Container} from "@mui/material";
 import * as React from "react";
-import ExpandableRectangle from "../comp/ExpandableRectangle";
+import ExpandableRectangleEN from "../comp/ExpandableRectangleEN";
 import TopnavbarEN from "../comp/TopnavbarEN";
 import backn from "../foto/back.jpg"
 import BackgroundImage from "../comp/BackgroundImage";
@@ -28,7 +28,7 @@ const NosotrosPageEN = () => {
                     </motion.div>
                     <Container className='mb-4'>
                         <Divider className="my-4" style={{height: '2px', width: '300px', margin: '0 auto'}}/>
-                        <ExpandableRectangle/>
+                        <ExpandableRectangleEN/>
                     </Container>
                 </div>
                 <div className=''

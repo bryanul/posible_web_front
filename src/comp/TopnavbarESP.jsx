@@ -16,6 +16,8 @@ import { useNavigate, useLocation} from "react-router-dom";
 import {useEffect, useState} from "react";
 import spanish from "../foto/spain.svg";
 import english from '../foto/english.svg'
+import {Helmet} from "react-helmet";
+
 export default function TopnavbarESP() {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +49,12 @@ export default function TopnavbarESP() {
     }, [selectedKeys]);
 
     return (<>
-        <Navbar onMenuOpenChange={setIsMenuOpen} className='bgnav'>
+            <Helmet>
+                <meta property='og:title' content='posible'/>
+                <meta property='og:image' content={LogoP2}/>
+                <meta property='og:url' content={'https://posible.pe/'+location.pathname}/>
+            </Helmet>
+            <Navbar onMenuOpenChange={setIsMenuOpen} className='bgnav'>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
